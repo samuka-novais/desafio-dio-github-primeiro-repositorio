@@ -1,0 +1,77 @@
+# comandos terminal windows/Git
+
+-mv = move arquivos mv lasanha.txt ./receitas
+-dir = listar arquivos dentro de uma pasta
+-cd = entrar / ou sair de um diretorio ..
+-cls = limpar
+-mkadir = criar um diretorio
+-echo = imprimi na tela
+-echo hello > hello.txt criar arquivo
+-rmdir workspace /s /q =remove pasta workspace
+-del workspace = .deleta arquivos da pasta workspace
+-cat = mostra o conteudo do arquivo
+-git clone =clonar repositorio
+-ls =lista as pastas e os arquivo
+-ls -a =lista arquivo ocultos
+--git init = inicializa/cria um repozitorio
+--git add * = adiciona um arquivo no git
+--git commit -m "msg sobre o commit" = apos esse comando o arquivo fica
+pronto no repositorio local e tbm pra ir para o repositorio online
+e o arquivo volta a ser unmodified
+
+--git config --list= lista as configurações do git
+
+--git config --global --unset user.email = exclui o email 
+--git config --global -- unset user.name = exclui o nickname
+
+--git config --global user.email "gg"= cria o email
+--git config --global user.name "aa"= cria o nickname
+
+
+
+###objetos (blobs)
+-os aquivos ficam guardados dentro do objeto blob
+vai ter o tipo do objeto,tamanho,conteudo do arquivo
+metadados do git
+
+ git remote add origin https://github.com/samuka-novais/livro-receitas.git = adiciona ao repositorio remoto do github
+git remote -v = confirma
+
+###objetos(tree)
+-armazenan blobs
+tambem contem metadados
+pode apontar para outras arvores
+tem sha1 encripitados para o blob apontado
+
+###objeto(commit)
+-objeto que junta todos os objetos
+aponta pra tree, para um parente ,autor, mensagem
+timestamp -data hora que foi criado meta dados
+
+
+--untracked = adiciona um arquivo / arquivo removido que ainda nao foi modificado
+--unmodified = arquivo que ainda nao sofreu modicação 
+--edita um arquivo/remove compara os sha1
+--modified = quando um arquivo é modificado /stage o arquivo
+staged = commit faz o arquivos voltarem serem unmodified
+
+ repositorio local é composto por commit
+
+ambiente de desenvlvimento
+ --workinkg directory
+ --staging area
+ --local repository
+
+--git status = mostra o status do reposiorio no momento
+
+
+
+
+
+
+
+
+
+
+
+
